@@ -28,7 +28,7 @@ only when the languages a person picks need it.
 | `typhoon-asr-realtime-Q8_0.gguf` | Speech recognition, Thai | 136,802,048 bytes | `bceea6516e7cf6b133bf5d9a62c091ed31d8885ae1d5244586186470f5c93878` |
 | `qwen3-asr-0.6b-Q8_0.gguf` | Speech recognition, Chinese | 850,423,456 bytes | `f081b2d5e23bd669d92cc331d722a8a0681943b8e6f34b48996fd5c319b5acd8` |
 | `NotoSansThai-VF.ttf` | Font, Thai | 218,652 bytes | `5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8` |
-| `NotoSansCJKsc-VF.ttf` | Font, Chinese | 35,624,588 bytes | `4869e537a467e6453558619719e0f8661e7ec0b2dec3d1b576fe0ab102aa28ce` |
+| `NotoSansCJKsc-VF.ttf` | Font, Chinese, Japanese and Korean | 36,144,788 bytes | `990c807e79c25662a5a9ecf7f971baeb2bf2eab9a559e5ecf15cdfdb8561d21f` |
 
 `SHA256SUMS` in the release lists the same checksums.
 
@@ -98,6 +98,5 @@ renamed and otherwise unchanged.
 ([licenses/OFL-1.1-NotoSansCJK.txt](licenses/OFL-1.1-NotoSansCJK.txt)).
 File `Sans/Variable/TTF/NotoSansCJKsc-VF.ttf` from
 [notofonts/noto-cjk](https://github.com/notofonts/noto-cjk) at commit
-`f8d157532fbfaeda587e826d4cd5b21a49186f7c`, saved again by fontTools as the
-font pack of [cranpose-fonts](https://crates.io/crates/cranpose-fonts) is; its
-characters and weight axis do not change.
+`f8d157532fbfaeda587e826d4cd5b21a49186f7c`, unchanged. Its `locl` forms draw
+Japanese, Korean and Hong Kong text in their regional letter forms.
