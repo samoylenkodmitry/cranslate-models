@@ -9,8 +9,9 @@ This repository is not the app. It hosts the models and fonts the app
 downloads: the speech and translation models every user needs, as assets of
 the [`models-v1`](../../releases/tag/models-v1) release, and the speech
 models and fonts for Thai and Chinese, as assets of the
-[`models-v2`](../../releases/tag/models-v2) release. The app downloads a file
-only when the languages a person picks need it.
+[`models-v2`](../../releases/tag/models-v2) release, and the Russian speech
+model, as an asset of the [`models-v3`](../../releases/tag/models-v3) release.
+The app downloads a file only when the languages a person picks need it.
 
 ## Files (release `models-v1`)
 
@@ -31,6 +32,14 @@ only when the languages a person picks need it.
 | `NotoSansCJKsc-VF.ttf` | Font, Chinese, Japanese and Korean | 36,144,788 bytes | `990c807e79c25662a5a9ecf7f971baeb2bf2eab9a559e5ecf15cdfdb8561d21f` |
 
 `SHA256SUMS` in the release lists the same checksums.
+
+## Files (release `models-v3`)
+
+| File | Task | Size | SHA-256 |
+| --- | --- | --- | --- |
+| `gigaam-v3-e2e-rnnt-Q8_0.gguf` | Speech recognition, Russian | 273,724,832 bytes | `78d63b47723b7f8d78c6113a6ef983b5a86e2a86f6c273e1f5cb6967b1c4467a` |
+
+`SHA256SUMS` in the release lists the same checksum.
 
 ## Sources and licenses
 
@@ -84,6 +93,14 @@ trained or changed beyond the 8-bit quantization.
 Model: [Qwen/Qwen3-ASR-0.6B](https://huggingface.co/Qwen/Qwen3-ASR-0.6B).
 The GGUF file is the Q8_0 conversion by
 [handy-computer/Qwen3-ASR-0.6B-gguf](https://huggingface.co/handy-computer/Qwen3-ASR-0.6B-gguf),
+hosted here unchanged.
+
+**GigaAM-v3** (end-to-end RNN-T) by the GigaChat Team, licensed under the
+[MIT License](https://opensource.org/license/mit)
+([licenses/MIT-GigaAM.txt](licenses/MIT-GigaAM.txt)).
+Model: [ai-sage/GigaAM-v3](https://huggingface.co/ai-sage/GigaAM-v3).
+The GGUF file is the Q8_0 conversion by
+[handy-computer/gigaam-v3-e2e-rnnt-gguf](https://huggingface.co/handy-computer/gigaam-v3-e2e-rnnt-gguf),
 hosted here unchanged.
 
 **Noto Sans Thai** by the Noto Project Authors, licensed under the
