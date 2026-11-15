@@ -9,9 +9,13 @@ This repository is not the app. It hosts the models and fonts the app
 downloads: the speech and translation models every user needs, as assets of
 the [`models-v1`](../../releases/tag/models-v1) release, and the speech
 models and fonts for Thai and Chinese, as assets of the
-[`models-v2`](../../releases/tag/models-v2) release, and the Russian speech
-model, as an asset of the [`models-v3`](../../releases/tag/models-v3) release.
-The app downloads a file only when the languages a person picks need it.
+[`models-v2`](../../releases/tag/models-v2) release, the Russian speech
+model, as an asset of the [`models-v3`](../../releases/tag/models-v3) release,
+the European speech model Parakeet Ultra, as an asset of the
+[`models-v4`](../../releases/tag/models-v4) release, and the Thai speech model
+OpenThai, as an asset of the [`models-v5`](../../releases/tag/models-v5)
+release. The app downloads a file only when the languages a person picks need
+it.
 
 ## Files (release `models-v1`)
 
@@ -40,6 +44,24 @@ The app downloads a file only when the languages a person picks need it.
 | `gigaam-v3-e2e-rnnt-Q8_0.gguf` | Speech recognition, Russian | 273,724,832 bytes | `78d63b47723b7f8d78c6113a6ef983b5a86e2a86f6c273e1f5cb6967b1c4467a` |
 
 `SHA256SUMS` in the release lists the same checksum.
+
+## Files (release `models-v4`)
+
+| File | Task | Size | SHA-256 |
+| --- | --- | --- | --- |
+| `parakeet-ultra-Q8_0.gguf` | Speech recognition, European languages | 740,363,168 bytes | `007a59761e9258779f189df396b50d12b83bb5b79e66df4b955c230d2f2a0a59` |
+
+`SHA256SUMS` in the release lists the same checksum; `LICENSE` and `NOTICE`
+come with it.
+
+## Files (release `models-v5`)
+
+| File | Task | Size | SHA-256 |
+| --- | --- | --- | --- |
+| `openthai2.0-asr-streaming-Q8_0.gguf` | Speech recognition, Thai | 753,744,640 bytes | `7a09eb2cf80a056f5dfdbff0f0b61453858707c2e59037e5009907740ab50260` |
+
+`SHA256SUMS` in the release lists the same checksum. `LICENSE`, `NOTICE` and
+the model cards of OpenThai and NVIDIA come with it.
 
 ## Sources and licenses
 
@@ -102,6 +124,24 @@ Model: [ai-sage/GigaAM-v3](https://huggingface.co/ai-sage/GigaAM-v3).
 The GGUF file is the Q8_0 conversion by
 [handy-computer/gigaam-v3-e2e-rnnt-gguf](https://huggingface.co/handy-computer/gigaam-v3-e2e-rnnt-gguf),
 hosted here unchanged.
+
+**Parakeet Ultra** by Moondream, trained further from NVIDIA's Parakeet TDT
+0.6B v3, licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+([licenses/CC-BY-4.0.txt](licenses/CC-BY-4.0.txt)).
+Model: [moondream/parakeet-ultra](https://huggingface.co/moondream/parakeet-ultra).
+The GGUF file is the Q8_0 conversion by
+[handy-computer/parakeet-ultra-gguf](https://huggingface.co/handy-computer/parakeet-ultra-gguf),
+hosted here unchanged.
+
+**OpenThai2.0 ASR Streaming** by iApp Technology, a Thai fine-tune of NVIDIA
+Nemotron 3.5 ASR Streaming 0.6B, licensed under the
+[OpenMDW License Agreement, version 1.1](https://openmdw.ai/license/1-1/)
+([licenses/OpenMDW-1.1.txt](licenses/OpenMDW-1.1.txt)).
+Model: [iapp/OpenThai2.0-ASR-Streaming](https://huggingface.co/iapp/OpenThai2.0-ASR-Streaming).
+The GGUF file is the Q8_0 conversion by
+[openthaigpt/OpenThai2.0-ASR-Streaming_GGUF](https://huggingface.co/openthaigpt/OpenThai2.0-ASR-Streaming_GGUF)
+at commit `6947b4349c1e433cc8049cf3f00e087dfc643131`, hosted here unchanged.
 
 **Noto Sans Thai** by the Noto Project Authors, licensed under the
 [SIL Open Font License 1.1](https://openfontlicense.org)
